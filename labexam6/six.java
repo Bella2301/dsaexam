@@ -1,6 +1,6 @@
 package labexam6;
 
-public class Six {
+public class six {
 
     public static void main(String[] args) {
         int[] originalArray = {3, 7, 1, 9, 4};
