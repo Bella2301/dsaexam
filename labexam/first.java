@@ -2,8 +2,9 @@ package labexam;
 
 import java.util.Scanner;
 
+
 public class first {
-    public static int countOccurrences(int[] arr, int num) {
+    public static int countAppearance(int[] arr, int num) {
         int count = 0;
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] == num) {
@@ -16,23 +17,18 @@ public class first {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Taking input for the array
-        System.out.print("Enter the number of elements in the array: ");
-        int n = scanner.nextInt();
-        int[] arr = new int[n];
-        System.out.println("Enter the elements of the array:");
-        for (int i = 0; i < n; i++) {
-            arr[i] = scanner.nextInt();
-        }
+        // The array
+        int[] arr = {1, 2, 1, 8};
+        System.out.println("Array: {1, 2, 1, 8}");
 
-        // Taking input for the number to be searched
-        System.out.print("Enter the number to be searched: ");
+        
+        System.out.print("Enter the number you want to search: ");
         int searchNum = scanner.nextInt();
 
         // Counting occurrences and displaying the result
-        int occurrences = countOccurrences(arr, searchNum);
-        if (occurrences > 0) {
-            System.out.println("The number " + searchNum + " appears " + occurrences + " time(s) in the array.");
+        int appearance = countAppearance(arr, searchNum);
+        if (appearance > 0) {
+            System.out.println("The number " + searchNum + " appears " + appearance + " times in the array.");
         } else {
             System.out.println("The number " + searchNum + " is not present in the array.");
         }
@@ -40,7 +36,6 @@ public class first {
         scanner.close();
     }
 }
-
 
 
 
