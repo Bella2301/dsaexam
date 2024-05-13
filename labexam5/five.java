@@ -36,7 +36,8 @@ class five {
 	}
 
 	public static void main(String[] args) {
-		int[] array = {1,1,4,3};
+		//array used in question 1
+		int[] array = {1,2,1,8};
 		merge_sort(array, 0, array.length-1);
 		for (int i = 0; i < array.length; i++) {
 			System.out.println(array[i]);
