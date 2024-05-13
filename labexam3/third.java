@@ -98,12 +98,6 @@ operations, adhering to the FIFO (First In, First Out) principle.*/
 
 
 
-// 5. Implement a linear queue data structure using two stacks
-MyQueue queue = new MyQueue();
-queue.enqueue(1);
-queue.enqueue(2);
-queue.enqueue(3);
-System.out.println("Dequeued element: " + queue.dequeue());
-System.out.println("Peek element: " + queue.peek());
+
 
  
